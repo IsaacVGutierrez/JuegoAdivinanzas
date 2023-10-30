@@ -76,7 +76,7 @@ namespace Juegos
         {
             if (message.Contains("Perdiste"))
             {
-                await Navigation.PushModalAsync(new ImagenPage("cara.jpg")); // Reemplaza el nombre de tu imagen
+                await Navigation.PushModalAsync(new ImagenPage("monja.jpg")); // Reemplaza el nombre de tu imagen
                 resultLabel.Text = message;
                 guessEntry.IsEnabled = false;
             }
