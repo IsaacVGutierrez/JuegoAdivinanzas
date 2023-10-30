@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Juegos.ImagenPage">
+
+    <StackLayout>
+        <Image x:Name="imageView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+           Aspect="AspectFill" />
+
+        <Label Text="PERDISTE!!" TextColor="Red" HorizontalOptions="Center" VerticalOptions="Center" 
+           FontSize="24" />
+
+        <Button Text="Volver a la página principal" Clicked="OnBackToMainPageClicked" HorizontalOptions="Center" VerticalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>

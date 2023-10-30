@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Juegos.MainPage"
+             xmlns:forms="clr-namespace:Xam.Forms.VideoPlayer;assembly=Xam.Forms.VideoPlayer">
+
+    <AbsoluteLayout>
+        <!-- Fondo de pantalla (imagen) -->
+        <Image Source="pregunta.jpg"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutFlags="All"
+               AbsoluteLayout.LayoutBounds="0,0,1,1" />
+
+        <!-- Contenido de la página -->
+
+        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,1,1,1">
+            <Label Text="ADIVINA EL NUMERO DEL 1 AL 100" TextColor="Red" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Entry x:Name="guessEntry" Placeholder="INGRESA EL NUMERO A ADIVINAR"  PlaceholderColor="White"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+        <Button Text="Adivinar" Clicked="OnGuessClicked" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Label x:Name="resultLabel" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+        <Button Text="Comenzar de nuevo" Clicked="OnRestartClicked" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <!-- <forms:VideoPlayer Source="vista.mp4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />-->
+
+            <!--  EN LA SEGUNDA VERSION HARE ANDAR UN VIDEO <Button Text="Ver Video" Clicked="OnVerVideoClicked" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />  -->
+
+       </StackLayout>
+
+    </AbsoluteLayout>
+
+</ContentPage>
